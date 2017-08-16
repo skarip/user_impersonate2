@@ -8,7 +8,6 @@ rvm:
   - 2.2
   - 2.3.1
 gemfile:
-  - Gemfile.rails3
   - Gemfile.rails4
 script:
   - script/test -g $BUNDLE_GEMFILE -n

@@ -14,9 +14,7 @@ module TestUtils
   end
 
   def dummy_app_dir
-    major_version = if rails_3?
-      '3'
-    elsif rails_4?
+    major_version = if rails_4?
       '4'
     else
       raise "Unsupported Rails version #{TestUtils.rails_version}"
@@ -38,12 +36,7 @@ module TestUtils
     rails_3? ? ActiveRecord::Fixtures : ActiveRecord::FixtureSet
   end
 
-  def rails_3?
-    rails_version_in_range?('3.2.0', '4.0.0')
-  end
-
   def rails_4?
     rails_version_in_range?('4.0.0', '5.0.0')
   end
 end
-

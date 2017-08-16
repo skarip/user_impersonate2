@@ -7,8 +7,8 @@
 ## Note
 
 This is a fork of Engine Yard's no-longer-maintained [`user_impersonate`](https://github.com/engineyard/user_impersonate)
-gem and is its official successor. It supports Rails 3.2.x and Rails 4 and has
-been tested against Ruby 1.9.3, 2.0.0 and 2.1.0, 2.2, 2.3.1.
+gem and is its official successor. It supports Rails from version 4.0 to Rails 5.1 (tests only exists for 4.0 though) and has
+been tested against Ruby 1.9.3, 2.0.0, 2.1.0, 2.2 and 2.3.1.
 
 ## Overview
 
@@ -283,7 +283,7 @@ To install all gem dependencies for the active version of Ruby and for a given
 gemfile, you'll need to run the `bundle` command, e.g.
 
 ```bash
-BUNDLE_GEMFILE=Gemfile.rails3 bundle
+BUNDLE_GEMFILE=Gemfile.rails4 bundle
 ```
 
 ### Running tests against all configurations (requires [rbenv](https://github.com/sstephenson/rbenv))
@@ -303,13 +303,7 @@ using the `bundle` command.
 ### Running tests against a single configuration
 
 To manually run the Travis-CI verification steps on your local machine, you can
-use the following sequence of commands for Rails 3.2.x:
-
-```bash
-script/test -g Gemfile.rails3
-```
-
-To test against Rails 4.0.x, use:
+use the following sequence of commands for Rails 4.0.x:
 
 ```bash
 script/test -g Gemfile.rails4
