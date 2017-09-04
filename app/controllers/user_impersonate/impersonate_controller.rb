@@ -60,11 +60,8 @@ module UserImpersonate
 
     def current_user_must_be_staff!
       unless user_is_staff?(current_staff)
-        flash[:error] = "You don't have access to this section."
-        redirect_to :back
+        redirect_back(fallback_location: '/', error: "You don't have access to this section.")
       end
-    rescue ActionController::RedirectBackError
-      redirect_to '/'
     end
 
     # current_staff changes from a staff user to
@@ -82,7 +79,7 @@ module UserImpersonate
       sign_in_user current_staff_user
       session[:staff_user_id] = nil
     end
-    
+
     def sign_out_user(user)
       # Only need to sign out if the staff class is different to the
       # user being impersonated
@@ -141,7 +138,7 @@ module UserImpersonate
     def user_is_staff_method
       config_or_default :user_is_staff_method, "staff?"
     end
-    
+
     def staff_class_name
       config_or_default :staff_class, "User"
     end
@@ -153,7 +150,7 @@ module UserImpersonate
 
     def redirect_on_revert(impersonated_user = nil, redirect_params = params)
       url = config_or_default :redirect_on_revert, root_url
-      redirect_to url, {}.merge(redirect_params)
+      redirect_to url, {}.merge(redirect_params.permit) # NOTE: not sure at this point what params does it need.
     end
 
     # gets overridden config value for engine, else returns default

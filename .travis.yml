@@ -2,12 +2,9 @@ before_install:
   - gem update bundler
 language: ruby
 rvm:
-  - 1.9.3
-  - 2.0.0
-  - 2.1.0
   - 2.2
   - 2.3.1
 gemfile:
-  - Gemfile.rails4
+  - Gemfile.rails5.1
 script:
   - script/test -g $BUNDLE_GEMFILE -n
