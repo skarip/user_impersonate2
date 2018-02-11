@@ -24,7 +24,7 @@ This Rails engine currently supports the following Rails authentication systems:
 
 ## Links
 
-* [Wiki](https://github.com/rcook/user_impersonate2/wiki) (includes tutorials
+* [Wiki](https://github.com/userimpersonate/user_impersonate2/wiki) (includes tutorials
 etc.)
 
 ## Example usage
@@ -271,7 +271,7 @@ Deface::Override.new(:virtual_path => "spree/layouts/spree_application",
 
 ## Contributing
 
-See [`.travis.yml`](https://github.com/rcook/user_impersonate2/blob/master/.travis.yml)
+See [`.travis.yml`](https://github.com/userimpersonate/user_impersonate2/blob/master/.travis.yml)
 for details of the commands that are run as part of the Travis-CI build of this
 project. The minimum bar for all push requests is that the Travis-CI build must
 pass. Contributors are also strongly encouraged to add new tests to cover any

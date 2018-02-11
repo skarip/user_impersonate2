@@ -11,7 +11,7 @@ class UserImpersonate::DeviseHelpersTest < ActionController::TestCase
     include UserImpersonate::DeviseHelpers::UrlHelpers
   end
 
-  # https://github.com/rcook/user_impersonate2/issues/3
+  # https://github.com/userimpersonate/user_impersonate2/issues/3
   # If config.user_finder is not specified, default of "find" should be used.
   # Similarly, config.user_class should default to "User".
   test 'user_finder not specified' do
@@ -23,7 +23,7 @@ class UserImpersonate::DeviseHelpersTest < ActionController::TestCase
     assert_equal user, staff_user
   end
 
-  # https://github.com/rcook/user_impersonate2/issues/3
+  # https://github.com/userimpersonate/user_impersonate2/issues/3
   # If config.user_finder is nil, default of "find" should be used.
   # Similarly, config.user_class should default to "User".
   test 'user_finder nil' do
@@ -35,7 +35,7 @@ class UserImpersonate::DeviseHelpersTest < ActionController::TestCase
     assert_equal user, staff_user
   end
 
-  # https://github.com/rcook/user_impersonate2/issues/3
+  # https://github.com/userimpersonate/user_impersonate2/issues/3
   # If config.user_finder is specified, the given method should be called.
   test 'user_finder other' do
     options = UserImpersonate::Engine.config.class.class_variable_get('@@options')
@@ -46,7 +46,7 @@ class UserImpersonate::DeviseHelpersTest < ActionController::TestCase
     end
   end
 
-  # https://github.com/rcook/user_impersonate2/issues/3
+  # https://github.com/userimpersonate/user_impersonate2/issues/3
   # If config.user_class is specified, the given model should be used.
   test 'user_class other' do
     options = UserImpersonate::Engine.config.class.class_variable_get('@@options')

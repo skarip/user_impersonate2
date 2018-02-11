@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = UserImpersonate::VERSION
   s.authors = ['Richard Cook', 'Dr Nic Williams', 'Many people at Engine Yard']
   s.email = 'rcook@rcook.org'
-  s.homepage = 'https://github.com/rcook/user_impersonate2'
+  s.homepage = 'https://github.com/userimpersonate/user_impersonate2'
   s.summary     = "Allow staff users to pretend to be your customers"
   s.description = "Allow staff users to pretend to be your customers; to impersonate their account."
   s.license = 'MIT'
