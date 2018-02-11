@@ -1,5 +1,7 @@
 # Change Log
 
+## 0.12.0 - Various fixes
+
 ## 0.11.0 - Minor API addition
 
 * Pull request #9: Use current_staff instead of current_user for custom current_user methods
