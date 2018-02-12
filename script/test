@@ -1,4 +1,6 @@
 #!/bin/bash
+set -euo pipefail
+
 if [[ "$OSTYPE" =~ ^darwin ]]; then
   READLINK=greadlink
 else
@@ -43,7 +45,7 @@ if [ "$GEMFILE" = '' ]; then
   show_usage
   exit 1
 fi
-GEMFILE=$(READLINK -f $GEMFILE)
+GEMFILE=$($READLINK -f $GEMFILE)
 
 # Ensure gem dependencies are installed
 if [ $NOINSTALL -eq 0 ]; then
