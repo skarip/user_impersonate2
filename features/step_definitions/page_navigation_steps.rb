@@ -7,8 +7,8 @@ When /^I visit the impersonate page$/ do
   visit "/impersonate"
 end
 
-Then /^I am told that page does not exist$/ do
-  assert page.has_content?("You don't have access to this section.")
+Then /^I am welcomed with open arms$/ do
+  assert page.has_content?('Welcome')
 end
 
 When /^I search for a user "(.*?)"$/ do |name|

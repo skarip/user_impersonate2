@@ -8,6 +8,6 @@ Given /^I am a (normal|staff) user "(.*?)"$/ do |type, name|
   visit "/users/sign_in"
   fill_in "Email", with: user.email
   fill_in "Password", with: "abc123"
-  click_button "Sign in"
+  click_button 'Log in'
   assert page.has_content?("Welcome #{name}!")
 end

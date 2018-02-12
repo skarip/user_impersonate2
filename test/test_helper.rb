@@ -23,7 +23,8 @@ if ActiveSupport::TestCase.method_defined?(:fixture_path=)
 end
 
 class ActionController::TestCase
-  include Devise::TestHelpers
+  include Devise::Test::ControllerHelpers
+  include Mocha::API
 
   protected
 

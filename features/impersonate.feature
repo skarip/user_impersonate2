@@ -8,7 +8,7 @@ Feature: Impersonate a user
     Then I do not see "are impersonating"
     
     When I visit the impersonate page
-    Then I am told that page does not exist
+    Then I am welcomed with open arms
   
   Scenario: Staff user finds, takes over and exist
     Given I am a staff user "Dr Nic Williams"

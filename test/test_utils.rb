@@ -33,7 +33,7 @@ module TestUtils
   private
 
   def fixture_set
-    rails_3? ? ActiveRecord::Fixtures : ActiveRecord::FixtureSet
+    ActiveRecord::FixtureSet
   end
 
   def rails_4?
