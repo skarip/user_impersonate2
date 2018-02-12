@@ -1,7 +1,7 @@
 ## `user_impersonate2`
 
 [![Install gem](https://badge.fury.io/rb/user_impersonate2.png)](https://rubygems.org/gems/user_impersonate2)
-[![Build status](https://travis-ci.org/userimpersonate/user_impersonate2.png)](https://travis-ci.org/userimpersonate/user_impersonate2)
+[![Build status](https://travis-ci.org/userimpersonate/user_impersonate2.png?branch=master)](https://travis-ci.org/userimpersonate/user_impersonate2?branch=master)
 [![Coverage status](https://coveralls.io/repos/github/userimpersonate/user_impersonate2/badge.svg?branch=master)](https://coveralls.io/github/userimpersonate/user_impersonate2?branch=master)
 
 ## Note
